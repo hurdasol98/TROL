@@ -11,7 +11,7 @@ struct MyTravelView: View {
     
     @State private var isShowModal = false
     @State private var isTrvael: Bool = false
-    
+    @State private var FriendCode = ""
     @State var testFriends: [Friend] = Friend.friends
     @State var selectedFriend: Friend
     
@@ -32,23 +32,37 @@ struct MyTravelView: View {
                         VStack(alignment: .leading) {
                             Text("졸업여행")
                                 .font(.custom("Happiness-Sans-Bold", size: 20))
+//                                .bold()
                             
                             Text("2022.06.26~2022.07.01")
                                 .font(.system(size: 12))
                         }
                         
                         Spacer()
+                        //설정 들어가기 버튼
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "gearshape.fill")
+                                .foregroundColor(.black)
+                        })
                         
-                        Image(systemName: "gearshape.fill")
                     }
                     
                     Spacer()
                     
-                    Text("+ 친구코드 추가하기")
+                    TextField("+ 친구코드 추가하기", text: $FriendCode)
                         .padding()
                         .frame(width: 312, height: 44)
                         .background(.white)
                         .cornerRadius(10)
+                        .font(.system(size: 18 ,weight: .heavy, design: .default))
+                        .font(.custom("Happiness-Sans-Regular", size: 15))
+//                    Text("+ 친구코드 추가하기")
+//                        .padding()
+//                        .frame(width: 312, height: 44)
+//                        .background(.white)
+//                        .cornerRadius(10)
                 }
                 .padding(25)
                 .frame(width: 354, height: 176)
@@ -59,6 +73,7 @@ struct MyTravelView: View {
                 VStack(alignment: .leading) {
                     Text("나의 코드")
                         .font(.system(size: 12))
+                        .font(.custom("Happiness-Sans-Bold", size: 12))
                         .bold()
                     
                     Text("3BF5GKS")
@@ -73,6 +88,7 @@ struct MyTravelView: View {
                 .frame(width: 354, height: 104)
                 .background(Color("trolYellow"))
                 .cornerRadius(10)
+                
                 
                 // 친구들의 역할
                 VStack(alignment: .leading) {
