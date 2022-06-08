@@ -13,8 +13,7 @@ struct TROLApp: App {
 
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            MyTravelView()
+            MyTravelView(selectedFriend: ocean)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
