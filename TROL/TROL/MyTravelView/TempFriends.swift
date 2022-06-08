@@ -70,7 +70,7 @@ var dale = Friend(name: "데일", role: "사진가", introduce: [
     "여행에 떠나기 전, 사진 핫플레이스를 미리 조사해보세요!",
     "단체포즈와 컨셉을 미리 기획해두면 더 즐거운 추억으로 남길 수 있어요!",
     "사진 어플을 여러개 준비해요!"
-], introducingSentence: "요리는 내가 한다!")
+], introducingSentence: "사진은 내가 찍는다!")
 
 var buckil = Friend(name: "버킬", role: "커뮤니케이터", introduce: [
     "여행에서 소통을 담당하는 인간 파파고!",
