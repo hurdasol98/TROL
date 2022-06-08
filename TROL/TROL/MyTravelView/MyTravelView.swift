@@ -13,7 +13,7 @@ struct MyTravelView: View {
     @State private var isTrvael: Bool = false
     
     @State var testFriends: [Friend] = [ocean, milky, rinda, dale, buckil, joon]
-    @State var selectedFriend: Friend
+    @State var selectedFriend = ocean
     
     let columns = [ GridItem(.adaptive(minimum: 100)) ]
     
@@ -31,8 +31,8 @@ struct MyTravelView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text("졸업여행")
-                                .font(.system(size: 20))
-                                .bold()
+                                .font(.custom("Happiness-Sans-Bold", size: 20))
+                            
                             Text("2022.06.26~2022.07.01")
                                 .font(.system(size: 12))
                         }

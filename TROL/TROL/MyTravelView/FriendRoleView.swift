@@ -42,9 +42,10 @@ struct FriendRoleView: View {
 
                 ForEach(testFriend.introduce.indices, id: \.self) { i in
                     VStack(alignment: .leading) {
-                        HStack {
+                        HStack(alignment: .firstTextBaseline) {
                             Image(systemName: "checkmark")
                                 .foregroundColor(Color("trolGreen"))
+                                .font(Font.body.weight(.bold))
 
                             Text("\(testFriend.introduce[i])")
                                 .frame(width: 300, alignment: .leading)
@@ -68,7 +69,7 @@ struct FriendRoleView: View {
                 
                 ForEach(testFriend.guiding.indices, id: \.self) { i in
                     VStack(alignment: .leading) {
-                        HStack {
+                        HStack(alignment: .firstTextBaseline) {
                             Image(systemName: "quote.opening")
                                 .foregroundColor(Color("trolGreen"))
 
