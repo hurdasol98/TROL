@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @State private var selection = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: $selection){
+            
+        }
+    }
+}
+
+
+struct MyRoleTab:View{
+    var body: some View{
+        Image(systemName: "person.crop.square.fill")
+            .resizable()
     }
 }
 
