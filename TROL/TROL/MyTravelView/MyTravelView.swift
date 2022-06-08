@@ -12,8 +12,8 @@ struct MyTravelView: View {
     @State private var isShowModal = false
     @State private var isTrvael: Bool = false
     
-    @State var testFriends: [Friend] = [ocean, milky, rinda, dale, buckil, joon]
-    @State var selectedFriend = ocean
+    @State var testFriends: [Friend] = Friend.friends
+    @State var selectedFriend: Friend
     
     let columns = [ GridItem(.adaptive(minimum: 100)) ]
     
@@ -106,6 +106,6 @@ struct MyTravelView: View {
 
 struct MyTravelView_Previews: PreviewProvider {
     static var previews: some View {
-        MyTravelView(selectedFriend: ocean)
+        MyTravelView(selectedFriend: Friend.friends[0])
     }
 }
