@@ -6,14 +6,18 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct MyTravelView: View {
     
+    @State private var travelName : String = "졸업여행" //여행 이름
     @State private var isShowModal = false
-    @State private var isTrvael: Bool = false
+    @State private var isTravel: Bool = false
+    @State private var myCode : String = "3BF5GKS"  //나의 코드
     @State private var FriendCode = ""
     @State var testFriends: [Friend] = Friend.friends
     @State var selectedFriend: Friend
+    var pasteBoard = UIPasteboard.general //나의 코드 누르면 복사
     
     let columns = [ GridItem(.adaptive(minimum: 100)) ]
     
@@ -30,9 +34,9 @@ struct MyTravelView: View {
                 VStack {
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("졸업여행")
+                            Text(travelName)
                                 .font(.custom("Happiness-Sans-Bold", size: 20))
-//                                .bold()
+                            //                                .bold()
                             
                             Text("2022.06.26~2022.07.01")
                                 .font(.system(size: 12))
@@ -56,13 +60,9 @@ struct MyTravelView: View {
                         .frame(width: 312, height: 44)
                         .background(.white)
                         .cornerRadius(10)
-                        .font(.system(size: 18 ,weight: .heavy, design: .default))
+                        .disableAutocorrection(true) //자동수정 막기
                         .font(.custom("Happiness-Sans-Regular", size: 15))
-//                    Text("+ 친구코드 추가하기")
-//                        .padding()
-//                        .frame(width: 312, height: 44)
-//                        .background(.white)
-//                        .cornerRadius(10)
+                    
                 }
                 .padding(25)
                 .frame(width: 354, height: 176)
@@ -75,13 +75,18 @@ struct MyTravelView: View {
                         .font(.system(size: 12))
                         .font(.custom("Happiness-Sans-Bold", size: 12))
                         .bold()
-                    
-                    Text("3BF5GKS")
-                        .bold()
-                        .padding()
-                        .frame(width: 312, height: 44, alignment: .leading)
-                        .background(.white)
-                        .cornerRadius(10)
+                    //나의 코드 누르면 복사
+                    Button(action: {
+                        pasteBoard.string = self.myCode
+                    }, label: {
+                        Text(myCode)
+                            .bold()
+                            .padding()
+                            .foregroundColor(.black)
+                            .frame(width: 312, height: 44, alignment: .leading)
+                            .background(.white)
+                            .cornerRadius(10)
+                    })
                     
                 }
                 .padding(25)
@@ -118,7 +123,10 @@ struct MyTravelView: View {
             }
         }
     }
+    
 }
+
+
 
 struct MyTravelView_Previews: PreviewProvider {
     static var previews: some View {
