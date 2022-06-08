@@ -89,6 +89,6 @@ struct FriendRoleView: View {
 
 struct FriendRoleView_Previews: PreviewProvider {
     static var previews: some View {
-        FriendRoleView(testFriend: .constant(ocean))
+        FriendRoleView(testFriend: .constant(Friend.friends[0]))
     }
 }

@@ -49,6 +49,6 @@ struct RoleRectangleView: View {
 
 struct RoleRectangleView_Previews: PreviewProvider {
     static var previews: some View {
-        RoleRectangleView(testFriend: .constant(rinda))
+        RoleRectangleView(testFriend: .constant(Friend.friends[2]))
     }
 }
