@@ -19,25 +19,27 @@ struct FriendRoleView: View {
             
             // 닫기 버튼
             HStack{
-                Spacer(minLength: 175)
-                Capsule()
-                    .fill(Color.secondary)
-                    .opacity(0.5)
-                    .frame(width: 35, height: 5)
-                    .padding(6)
+                Spacer()
+                Image(systemName: "minus")
                     
-                    
+                    .resizable()
+                    .frame(width: 50, height: 5)
+                    .foregroundColor(.black)
+                Spacer()
+            }
+            HStack{
                 Spacer()
                 Button() {
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("닫기")
                         .font(.system(size: 17))
-                    //.frame(width: 354, height: 10, alignment: .trailing)
-                        .padding(.top)
                         .padding(.horizontal)
                         .foregroundColor(.black)
                 }
+                
+                
+                
             }
             
             
@@ -50,7 +52,7 @@ struct FriendRoleView: View {
                 Text("역할 소개")
                     .font(.system(size: 20))
                     .bold()
-                    .padding(.bottom, 5)
+                    .padding(.vertical, 5)
                     .foregroundColor(.black)
                 
                 ForEach(testFriend.introduce.indices, id: \.self) { i in
