@@ -24,7 +24,7 @@ struct EmptyMyTravelView: View {
                 Spacer()
                 
                 Text("텅")
-                    .font(.system(size: 270))
+                    .font(.custom("Happiness-Sans-Title.", size: 270))
                     .bold()
                     .foregroundColor(Color("trolDimGray"))
                     .overlay(Image("LyingBear")

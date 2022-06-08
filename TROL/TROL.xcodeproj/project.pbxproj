@@ -47,14 +47,13 @@
 
 /* Begin PBXFileReference section */
 		36477E74284F721C0067B480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		36477E81284F731C0067B480 /* Happiness-Sans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Bold.otf"; sourceTree = "<group>"; };
-		36477E82284F731C0067B480 /* Happiness-Sans-Title.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Title.otf"; sourceTree = "<group>"; };
-		36477E83284F731C0067B480 /* HappinessSansVF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HappinessSansVF.ttf; sourceTree = "<group>"; };
-		36477E84284F731C0067B480 /* Happiness-Sans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Regular.otf"; sourceTree = "<group>"; };
 		36477E85284F79C00067B480 /* FriendRoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRoleView.swift; sourceTree = "<group>"; };
 		36477E87284F79D00067B480 /* EmptyMyTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMyTravelView.swift; sourceTree = "<group>"; };
 		36477E8D284F93E30067B480 /* TempFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFriends.swift; sourceTree = "<group>"; };
 		36477E8F284FA8040067B480 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
+		36A0BB7528506AEB002C5822 /* Happiness-Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Regular.ttf"; sourceTree = "<group>"; };
+		36A0BB7628506AEB002C5822 /* Happiness-Sans-Title.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Title.ttf"; sourceTree = "<group>"; };
+		36A0BB7728506AEB002C5822 /* Happiness-Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Bold.ttf"; sourceTree = "<group>"; };
 		36D96F4E28503F560076BFE5 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		36D96F50285046460076BFE5 /* RoleRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRectangleView.swift; sourceTree = "<group>"; };
 		835443B2284F4C7200AF2F1F /* TROL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TROL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,10 +116,9 @@
 		36477E75284F727B0067B480 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				36477E81284F731C0067B480 /* Happiness-Sans-Bold.otf */,
-				36477E84284F731C0067B480 /* Happiness-Sans-Regular.otf */,
-				36477E82284F731C0067B480 /* Happiness-Sans-Title.otf */,
-				36477E83284F731C0067B480 /* HappinessSansVF.ttf */,
+				36A0BB7728506AEB002C5822 /* Happiness-Sans-Bold.ttf */,
+				36A0BB7528506AEB002C5822 /* Happiness-Sans-Regular.ttf */,
+				36A0BB7628506AEB002C5822 /* Happiness-Sans-Title.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";

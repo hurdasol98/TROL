@@ -24,13 +24,13 @@ struct RoleRectangleView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: 150, height: 160)
+                .offset(x: 80, y: 30)
                 .mask {
-                    ZStack {
-                        Circle()
-                            .frame(width: 150, height: 150)
+                    VStack {
+                        Rectangle()
+                            .frame(width: 350, height: 160)
                     }
                 }
-                .offset(x: 30, y: 50)
             
             VStack(alignment: .leading) {
                 Text("\(testFriend.introducingSentence)")
