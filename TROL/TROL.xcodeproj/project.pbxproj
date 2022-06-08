@@ -20,6 +20,7 @@
 		835443E7284F4CAD00AF2F1F /* MyRoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835443E6284F4CAD00AF2F1F /* MyRoleView.swift */; };
 		835443E9284F4CD400AF2F1F /* RoleGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835443E8284F4CD400AF2F1F /* RoleGameView.swift */; };
 		835443EB284F4CE400AF2F1F /* MyTravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835443EA284F4CE400AF2F1F /* MyTravelView.swift */; };
+		BF78B6DE285069CB00F3C0AE /* RoleModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF78B6DD285069CB00F3C0AE /* RoleModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		835443E6284F4CAD00AF2F1F /* MyRoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoleView.swift; sourceTree = "<group>"; };
 		835443E8284F4CD400AF2F1F /* RoleGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleGameView.swift; sourceTree = "<group>"; };
 		835443EA284F4CE400AF2F1F /* MyTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelView.swift; sourceTree = "<group>"; };
+		BF78B6DD285069CB00F3C0AE /* RoleModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				835443E6284F4CAD00AF2F1F /* MyRoleView.swift */,
 				835443E8284F4CD400AF2F1F /* RoleGameView.swift */,
 				835443EA284F4CE400AF2F1F /* MyTravelView.swift */,
+				BF78B6DD285069CB00F3C0AE /* RoleModal.swift */,
 			);
 			path = TROL;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				835443E7284F4CAD00AF2F1F /* MyRoleView.swift in Sources */,
 				835443EB284F4CE400AF2F1F /* MyTravelView.swift in Sources */,
 				835443C2284F4C7500AF2F1F /* TROL.xcdatamodeld in Sources */,
+				BF78B6DE285069CB00F3C0AE /* RoleModal.swift in Sources */,
 				835443E5284F4CA100AF2F1F /* TabBarView.swift in Sources */,
 				835443B6284F4C7200AF2F1F /* TROLApp.swift in Sources */,
 			);

@@ -13,7 +13,8 @@ struct TROLApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            MyTravelView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
