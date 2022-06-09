@@ -21,7 +21,6 @@ struct FriendRoleView: View {
             HStack{
                 Spacer()
                 Image(systemName: "minus")
-                    
                     .resizable()
                     .frame(width: 50, height: 5)
                     .foregroundColor(.black)

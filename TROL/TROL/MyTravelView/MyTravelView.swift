@@ -65,7 +65,7 @@ struct MyTravelView: View {
                                 .font(.custom("Happiness-Sans-Regular", size: 15))
                                 .padding(.top, 50)
                                 .padding(.bottom)
-                                
+                            
                         }
                         //                    .padding(25)
                         //                    .frame(width: screenWidth-19*2, height: 176)
@@ -73,7 +73,6 @@ struct MyTravelView: View {
                         //                    .cornerRadius(10)
                         
                         //선
-                        
                         Line()
                             .stroke(style: StrokeStyle(lineWidth: 5, lineCap: .round, dash: [0.1,10]))
                             .foregroundColor(.white)
@@ -82,7 +81,7 @@ struct MyTravelView: View {
                                 .frame(width: 20)
                                 .foregroundColor(.white)
                                 .offset(x: -(screenWidth/2 - 19)))
-                            .overlay(                                   Circle()
+                            .overlay(Circle()
                                 .frame(width: 20)
                                 .foregroundColor(.white)
                                 .offset(x: +(screenWidth/2 - 19))
