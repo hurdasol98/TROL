@@ -28,6 +28,7 @@ struct TicketBackgroundView: View{
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color("trolYellow"))
                 .frame(width: 354, height: 174)
+
             
             Image("HiBear")
                 .resizable()
