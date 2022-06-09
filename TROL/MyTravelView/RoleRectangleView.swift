@@ -18,7 +18,7 @@ struct RoleRectangleView: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 354, height: 160)
                 .foregroundColor(Color("trolYellow"))
-                .padding()
+                .padding(.horizontal)
             
             Image("HiBear")
                 .resizable()

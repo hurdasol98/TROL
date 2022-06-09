@@ -23,7 +23,7 @@ struct EmptyMyTravelView: View {
                 
                 Spacer()
                 
-                Text("텅")
+                Text("휑")
                     .font(.custom("Happiness-Sans-Title.", size: 270))
                     .bold()
                     .foregroundColor(Color("trolDimGray"))
