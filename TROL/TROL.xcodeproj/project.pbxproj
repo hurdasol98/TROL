@@ -143,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				835443B4284F4C7200AF2F1F /* TROL */,
+				36477E73284F70720067B480 /* MyTravelView */,
 				36D4C2A72850E15900A585E6 /* AddTravelView */,
 				835443CA284F4C7500AF2F1F /* TROLTests */,
 				835443D4284F4C7500AF2F1F /* TROLUITests */,
@@ -174,7 +175,6 @@
 				835443E4284F4CA100AF2F1F /* TabBarView.swift */,
 				835443E6284F4CAD00AF2F1F /* MyRoleView.swift */,
 				835443E8284F4CD400AF2F1F /* RoleGameView.swift */,
-				36477E73284F70720067B480 /* MyTravelView */,
 			);
 			path = TROL;
 			sourceTree = "<group>";
