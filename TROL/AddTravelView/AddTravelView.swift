@@ -13,8 +13,8 @@ struct AddTravelView: View {
     @State var startDate = Date()
     @State var endDate = Date()
     
-    @State var roles: [Role] = [account, direction, driver, photographer, planner, communicator, crown, dj, cook, humanRouter, slave, maid]
-    @State var selectedRoles: [Role] = []
+    @State var roles: [TravelRole] = [account, direction, driver, photographer, planner, communicator, crown, dj, cook, humanRouter, slave, maid]
+    @State var selectedRoles: [TravelRole] = []
     
     let columns = [ GridItem(.adaptive(minimum: 100)) ]
     
