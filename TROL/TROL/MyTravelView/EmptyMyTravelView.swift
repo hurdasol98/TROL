@@ -38,7 +38,7 @@ struct EmptyMyTravelView: View {
                     .font(.system(size: 12))
                 
                 NavigationLink {
-                    TempView()
+                    AddTravelView()
                 } label: {
                     Text("새로운 여행 추가하기")
                         .foregroundColor(.white)
