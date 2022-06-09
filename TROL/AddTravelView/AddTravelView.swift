@@ -13,8 +13,8 @@ struct AddTravelView: View {
     @State var startDate = Date()
     @State var endDate = Date()
     
-    @State var roles: [Role] = [account, direction, driver, photographer, planner, communicator, crown, dj, cook, humanRouter, slave, maid]
-    @State var selectedRoles: [Role] = []
+    @State var roles: [TravelRole] = [account, direction, driver, photographer, planner, communicator, crown, dj, cook, humanRouter, slave, maid]
+    @State var selectedRoles: [TravelRole] = []
     
     let columns = [ GridItem(.adaptive(minimum: 100)) ]
     
@@ -84,9 +84,9 @@ struct AddTravelView: View {
                     ForEach(roles.indices, id: \.self) { i in
                         RoleGridView(role: $roles[i])
                             .onTapGesture {
-                                print("\(roles[i].name) called")
+//                                print("\(roles[i].name) called")
                                 roles[i].isCheck.toggle()
-                                print("\(roles[i].name): \(roles[i].isCheck)")
+//                                print("\(roles[i].name): \(roles[i].isCheck)")
                                 
                                 if roles[i].isCheck { selectedRoles.append(roles[i]) }
                                 else {
@@ -94,7 +94,10 @@ struct AddTravelView: View {
                                     selectedRoles.remove(at: index)
                                 }
                                 
-                                print(selectedRoles)
+                                for i in 0..<selectedRoles.count {
+                                    print("\(selectedRoles[i].name), ", terminator: "")
+                                }
+                                print()
                             }
                     }
                     

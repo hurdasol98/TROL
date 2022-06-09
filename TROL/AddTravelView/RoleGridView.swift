@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RoleGridView: View {
     
-    @Binding var role: Role
+    @Binding var role: TravelRole
     
     var body: some View {
         ZStack {
