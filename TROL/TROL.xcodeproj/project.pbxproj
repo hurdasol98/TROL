@@ -26,9 +26,11 @@
 		835443E7284F4CAD00AF2F1F /* MyRoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835443E6284F4CAD00AF2F1F /* MyRoleView.swift */; };
 		835443E9284F4CD400AF2F1F /* RoleGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835443E8284F4CD400AF2F1F /* RoleGameView.swift */; };
 		835443EB284F4CE400AF2F1F /* MyTravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835443EA284F4CE400AF2F1F /* MyTravelView.swift */; };
-		BFAF9A21285080C5002790A4 /* Happiness-Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFAF9A1E285080C5002790A4 /* Happiness-Sans-Bold.ttf */; };
-		BFAF9A22285080C5002790A4 /* Happiness-Sans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFAF9A1F285080C5002790A4 /* Happiness-Sans-Regular.ttf */; };
-		BFAF9A23285080C5002790A4 /* Happiness-Sans-Title.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFAF9A20285080C5002790A4 /* Happiness-Sans-Title.ttf */; };
+
+		E158408728507A0300F39095 /* TicketPunchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158408628507A0300F39095 /* TicketPunchingView.swift */; };
+		E158408928507DEF00F39095 /* TicketInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158408828507DEF00F39095 /* TicketInfoView.swift */; };
+		E158408B2850848400F39095 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158408A2850848400F39095 /* TodoListView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +74,10 @@
 		835443E6284F4CAD00AF2F1F /* MyRoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoleView.swift; sourceTree = "<group>"; };
 		835443E8284F4CD400AF2F1F /* RoleGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleGameView.swift; sourceTree = "<group>"; };
 		835443EA284F4CE400AF2F1F /* MyTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelView.swift; sourceTree = "<group>"; };
-		BFAF9A1E285080C5002790A4 /* Happiness-Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Bold.ttf"; sourceTree = "<group>"; };
-		BFAF9A1F285080C5002790A4 /* Happiness-Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Regular.ttf"; sourceTree = "<group>"; };
-		BFAF9A20285080C5002790A4 /* Happiness-Sans-Title.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Title.ttf"; sourceTree = "<group>"; };
+
+		E158408628507A0300F39095 /* TicketPunchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPunchingView.swift; sourceTree = "<group>"; };
+		E158408828507DEF00F39095 /* TicketInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfoView.swift; sourceTree = "<group>"; };
+		E158408A2850848400F39095 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +161,8 @@
 				835443C0284F4C7500AF2F1F /* TROL.xcdatamodeld */,
 				835443BB284F4C7500AF2F1F /* Preview Content */,
 				835443E4284F4CA100AF2F1F /* TabBarView.swift */,
-				835443E6284F4CAD00AF2F1F /* MyRoleView.swift */,
 				835443E8284F4CD400AF2F1F /* RoleGameView.swift */,
+				E1584085285079B800F39095 /* MyRoleView */,
 				36477E73284F70720067B480 /* MyTravelView */,
 			);
 			path = TROL;
@@ -188,6 +191,17 @@
 				835443D7284F4C7500AF2F1F /* TROLUITestsLaunchTests.swift */,
 			);
 			path = TROLUITests;
+			sourceTree = "<group>";
+		};
+		E1584085285079B800F39095 /* MyRoleView */ = {
+			isa = PBXGroup;
+			children = (
+				835443E6284F4CAD00AF2F1F /* MyRoleView.swift */,
+				E158408628507A0300F39095 /* TicketPunchingView.swift */,
+				E158408828507DEF00F39095 /* TicketInfoView.swift */,
+				E158408A2850848400F39095 /* TodoListView.swift */,
+			);
+			path = MyRoleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,13 +339,16 @@
 			files = (
 				835443BF284F4C7500AF2F1F /* Persistence.swift in Sources */,
 				36477E86284F79C00067B480 /* FriendRoleView.swift in Sources */,
+				E158408B2850848400F39095 /* TodoListView.swift in Sources */,
 				835443B8284F4C7200AF2F1F /* ContentView.swift in Sources */,
 				36D96F4F28503F560076BFE5 /* GridView.swift in Sources */,
+				E158408728507A0300F39095 /* TicketPunchingView.swift in Sources */,
 				835443E9284F4CD400AF2F1F /* RoleGameView.swift in Sources */,
 				835443E7284F4CAD00AF2F1F /* MyRoleView.swift in Sources */,
 				36477E8E284F93E30067B480 /* TempFriends.swift in Sources */,
 				36477E90284FA8040067B480 /* TempView.swift in Sources */,
 				835443EB284F4CE400AF2F1F /* MyTravelView.swift in Sources */,
+				E158408928507DEF00F39095 /* TicketInfoView.swift in Sources */,
 				835443C2284F4C7500AF2F1F /* TROL.xcdatamodeld in Sources */,
 				835443E5284F4CA100AF2F1F /* TabBarView.swift in Sources */,
 				36477E88284F79D00067B480 /* EmptyMyTravelView.swift in Sources */,
