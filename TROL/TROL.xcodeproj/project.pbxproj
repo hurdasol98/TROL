@@ -57,6 +57,9 @@
 		36477E87284F79D00067B480 /* EmptyMyTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMyTravelView.swift; sourceTree = "<group>"; };
 		36477E8D284F93E30067B480 /* TempFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFriends.swift; sourceTree = "<group>"; };
 		36477E8F284FA8040067B480 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
+		36A0BB7528506AEB002C5822 /* Happiness-Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Regular.ttf"; sourceTree = "<group>"; };
+		36A0BB7628506AEB002C5822 /* Happiness-Sans-Title.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Title.ttf"; sourceTree = "<group>"; };
+		36A0BB7728506AEB002C5822 /* Happiness-Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Happiness-Sans-Bold.ttf"; sourceTree = "<group>"; };
 		36D96F4E28503F560076BFE5 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		36D96F50285046460076BFE5 /* RoleRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRectangleView.swift; sourceTree = "<group>"; };
 		835443B2284F4C7200AF2F1F /* TROL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TROL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,9 +128,11 @@
 		36477E75284F727B0067B480 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+
 				E15840AE2851C25900F39095 /* Happiness-Sans-Bold.ttf */,
 				E15840AF2851C25900F39095 /* Happiness-Sans-Regular.ttf */,
 				E15840B02851C25900F39095 /* Happiness-Sans-Title.ttf */,
+
 			);
 			path = Fonts;
 			sourceTree = "<group>";
