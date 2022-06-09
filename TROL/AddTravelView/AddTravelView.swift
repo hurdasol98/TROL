@@ -84,9 +84,9 @@ struct AddTravelView: View {
                     ForEach(roles.indices, id: \.self) { i in
                         RoleGridView(role: $roles[i])
                             .onTapGesture {
-                                print("\(roles[i].name) called")
+//                                print("\(roles[i].name) called")
                                 roles[i].isCheck.toggle()
-                                print("\(roles[i].name): \(roles[i].isCheck)")
+//                                print("\(roles[i].name): \(roles[i].isCheck)")
                                 
                                 if roles[i].isCheck { selectedRoles.append(roles[i]) }
                                 else {
@@ -94,7 +94,10 @@ struct AddTravelView: View {
                                     selectedRoles.remove(at: index)
                                 }
                                 
-                                print(selectedRoles)
+                                for i in 0..<selectedRoles.count {
+                                    print("\(selectedRoles[i].name), ", terminator: "")
+                                }
+                                print()
                             }
                     }
                     
