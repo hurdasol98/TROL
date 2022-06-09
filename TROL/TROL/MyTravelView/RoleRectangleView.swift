@@ -18,7 +18,7 @@ struct RoleRectangleView: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 354, height: 160)
                 .foregroundColor(Color("trolYellow"))
-                .padding()
+                .padding(.horizontal)
             
             Image("HiBear")
                 .resizable()
@@ -49,6 +49,6 @@ struct RoleRectangleView: View {
 
 struct RoleRectangleView_Previews: PreviewProvider {
     static var previews: some View {
-        RoleRectangleView(testFriend: .constant(rinda))
+        RoleRectangleView(testFriend: .constant(Friend.friends[2]))
     }
 }
