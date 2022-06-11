@@ -27,19 +27,17 @@ struct TodoListView: View {
     @State private var checked = false
     
     var body: some View {
-        VStack(alignment: .center, spacing: 0){
-            HStack(spacing: 178.5){
+        VStack(alignment: .leading, spacing: 0){
+            HStack(){
                 Text("내가 할 일").bold().font(.system(size: 28))
-                Button("편집하기"){
-                    
-                }.hidden()
+                    .padding([.leading], 18.5)
             }
             
             Button(action: {
                 self.showTodoCreate = true
             }) {
                 Text("내가 할 일 추가하기")
-                    .foregroundColor(Color.green)
+                    .foregroundColor(Color("TrolGreen"))
                     .bold()
                     .font(.system(size: 17))
                     .padding()
@@ -56,7 +54,7 @@ struct TodoListView: View {
                 
             }
             ForEach(todo) { item in
-                CheckView(isChecked: item.isChecked, title: item.title)
+                CheckView(isChecked: item.isChecked, title: item.title).padding(EdgeInsets(top: 5, leading: 15, bottom: 0, trailing: 0))
             }
             
         }
