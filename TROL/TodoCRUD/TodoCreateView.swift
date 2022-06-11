@@ -39,6 +39,7 @@ struct TodoCreateView: View {
              .frame(height: 1)
              .frame(width: 354)
              .background(Color.black)
+             .padding(18.5)
             
             TodoInfoView().padding(EdgeInsets(top: 0, leading: 18.5, bottom: 0, trailing: 0))
             
@@ -72,6 +73,7 @@ struct ClearButton: ViewModifier {
             }) {
                 Image(systemName: "multiply")
                     .foregroundColor(.secondary)
+                    .padding([.trailing], 18.5)
             }
         }
     }
