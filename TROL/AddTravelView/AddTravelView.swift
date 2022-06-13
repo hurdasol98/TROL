@@ -80,7 +80,7 @@ struct AddTravelView: View {
                     Text("👀")
                 }
                 .padding()
-                .background(Color("trolIvory"))
+                .background(Color("TrolIvory"))
                 .cornerRadius(10)
                 
                 LazyVGrid(columns: columns, spacing: 20) {
