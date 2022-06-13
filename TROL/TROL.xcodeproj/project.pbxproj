@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		36094D0D2850FB3F00132DE5 /* RoleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36094D0C2850FB3F00132DE5 /* RoleGridView.swift */; };
 		36094D0F2851026200132DE5 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36094D0E2851026200132DE5 /* CustomGridView.swift */; };
+		3609BC4728571D6000B550B3 /* DefaultRoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3609BC4628571D6000B550B3 /* DefaultRoles.swift */; };
 		36477E86284F79C00067B480 /* FriendRoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36477E85284F79C00067B480 /* FriendRoleView.swift */; };
 		36477E88284F79D00067B480 /* EmptyMyTravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36477E87284F79D00067B480 /* EmptyMyTravelView.swift */; };
 		36477E8E284F93E30067B480 /* TempFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36477E8D284F93E30067B480 /* TempFriends.swift */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		36094D0C2850FB3F00132DE5 /* RoleGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleGridView.swift; sourceTree = "<group>"; };
 		36094D0E2851026200132DE5 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
+		3609BC4628571D6000B550B3 /* DefaultRoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRoles.swift; sourceTree = "<group>"; };
 		36477E74284F721C0067B480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		36477E85284F79C00067B480 /* FriendRoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRoleView.swift; sourceTree = "<group>"; };
 		36477E87284F79D00067B480 /* EmptyMyTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMyTravelView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				365CE5A72851E8B60000BC6A /* Model.swift */,
+				3609BC4628571D6000B550B3 /* DefaultRoles.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				E15840B82851CAA500F39095 /* TicketInfoView.swift in Sources */,
 				36D96F4F28503F560076BFE5 /* GridView.swift in Sources */,
 				835443E9284F4CD400AF2F1F /* RoleGameView.swift in Sources */,
+				3609BC4728571D6000B550B3 /* DefaultRoles.swift in Sources */,
 				36094D0F2851026200132DE5 /* CustomGridView.swift in Sources */,
 				36477E8E284F93E30067B480 /* TempFriends.swift in Sources */,
 				E15840BC2851CAB500F39095 /* TodoListView.swift in Sources */,

@@ -13,7 +13,7 @@ struct TROLApp: App {
 
     var body: some Scene {
         WindowGroup {
-            EmptyMyTravelView()
+            TabBarView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
