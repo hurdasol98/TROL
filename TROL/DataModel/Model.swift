@@ -9,7 +9,7 @@ import Foundation
 
 // 전체적인 Travel 관리
 final class TravelData: ObservableObject {
-    @Published var travel: Travel = Travel(isExist: false, name: "", startDate: Date(), endDate: Date(), users: [User(name: "오션", myRole: nil, toDoList: nil)], usingRoles: [], travelCode: "")
+    @Published var travel: Travel = Travel(isExist: false, name: "여행", startDate: Date(), endDate: Date(), users: [User(name: "오션", myRole: nil, toDoList: ToDoList.defaultToDo)], usingRoles: [], travelCode: "3BF67A")
     
     func saveTravel(isExist: Bool, name: String, startDate: Date, endDate: Date, usingRoles: [Role]) {
         self.travel.isExist = true
@@ -34,42 +34,6 @@ struct Travel {
     var usingRoles: [Role]
     var travelCode: String
 }
-    
-//    mutating func saveTravel(isExist: Bool, name: String, startDate: Date, endDate: Date, usingRoles: [Role]) {
-//        self.isExist = true
-//        self.name = name
-//        self.startDate = startDate
-//        self.endDate = endDate
-//        self.usingRoles = usingRoles
-//    }
-
-//class Travel: ObservableObject {
-//    var isExist: Bool
-//    var users: [User]
-//    var name: String
-//    var startDate: Date
-//    var endDate: Date
-//    var usingRoles: [Role]
-//    var travelCode: String
-//
-//    init(isExist: Bool = false, name: String, startDate: Date, endDate: Date, users: [User], usingRoles: [Role], travelCode: String) {
-//        self.isExist = isExist
-//        self.name = name
-//        self.startDate = startDate
-//        self.endDate = endDate
-//        self.users = users
-//        self.usingRoles = usingRoles
-//        self.travelCode = travelCode
-//    }
-//
-//    func saveTravel(isExist: Bool, name: String, startDate: Date, endDate: Date, usingRoles: [Role]) {
-//        self.isExist = true
-//        self.name = name
-//        self.startDate = startDate
-//        self.endDate = endDate
-//        self.usingRoles = usingRoles
-//    }
-//}
 
 
 struct User {
@@ -90,9 +54,18 @@ struct Role {
     var isChecked: Bool
 }
 
-struct ToDoList {
+struct ToDoList: Identifiable {
     var id: Int
     var title: String
     var isChecked: Bool
 }
 
+extension ToDoList {
+    static var defaultToDo = [
+        ToDoList(id: 0, title: "항공권 가격 비교하기", isChecked: true),
+        ToDoList(id: 1, title: "항공권 예약하기", isChecked: false),
+        ToDoList(id: 2, title: "숙소+항공권 가격 정산", isChecked: false),
+        ToDoList(id: 3, title: "숙소 알아보기", isChecked: true),
+        ToDoList(id: 4, title: "내 계좌 알려주기", isChecked: true)
+    ]
+}

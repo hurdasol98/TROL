@@ -11,7 +11,7 @@ struct CustomGridView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .fill(Color("trolDimGray"))
+                .fill(Color("TrolDimGray"))
                 .frame(width: 110, height: 110)
             
             Text("원하는 역할이 없다면?")
