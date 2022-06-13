@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct TROLApp: App {
-    
     let persistenceController = PersistenceController.shared
     
     @StateObject private var travelData = TravelData()
