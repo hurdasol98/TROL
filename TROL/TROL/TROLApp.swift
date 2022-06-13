@@ -10,10 +10,15 @@ import SwiftUI
 @main
 struct TROLApp: App {
     let persistenceController = PersistenceController.shared
+    
+    @StateObject private var travelData = TravelData()
+    @StateObject private var roleData = RoleData()
 
     var body: some Scene {
         WindowGroup {
-            EmptyMyTravelView()
+            TabBarView()
+                .environmentObject(travelData)
+                .environmentObject(roleData)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

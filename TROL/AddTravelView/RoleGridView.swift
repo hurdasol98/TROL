@@ -9,17 +9,17 @@ import SwiftUI
 
 struct RoleGridView: View {
     
-    @Binding var role: TravelRole
+    @Binding var role: Role
     
     var body: some View {
         ZStack {
-            if role.isCheck {
+            if role.isChecked {
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color("trolGreen"), lineWidth: 3)
+                    .stroke(Color("TrolGreen"), lineWidth: 3)
                     .frame(width: 110, height: 110)
             } else {
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(Color("trolDimGray"))
+                    .fill(Color("TrolDimGray"))
                     .frame(width: 110, height: 110)
             }
             
@@ -39,6 +39,6 @@ struct RoleGridView: View {
 
 struct RoleGridView_Previews: PreviewProvider {
     static var previews: some View {
-        RoleGridView(role: .constant(photographer))
+        RoleGridView(role: .constant(Role.defaultRoles[0]))
     }
 }
